@@ -1,4 +1,4 @@
-let todoList = [];
+let todoList = JSON.parse(localStorage.getItem('displayItems')) || [];
 displayItems();
 function addTodo() {
     let inputElement = document.querySelector('#todoInput');
@@ -29,4 +29,5 @@ function displayItems() {
         `
     }
     containerElement.innerHTML = newHtml;
+    localStorage.setItem('displayItems', JSON.stringify(todoList));
 }
