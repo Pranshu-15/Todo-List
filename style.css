@@ -1,0 +1,35 @@
+body{
+    font-family: cursive;
+}
+h1{
+    text-align: center;
+}
+.gridContainer {
+    display: grid;
+    grid-template-columns: 200px 150px 100px;
+    column-gap: 40px;
+    row-gap: 20px;
+    margin-top: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.inputBox{
+    height: 40px;
+    border-radius: 8px;
+    text-align: center;
+}
+.myAddBtn{
+    background-color: greenyellow;
+    border-radius: 8px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+}
+.myDelBtn{
+    background-color: brown;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
